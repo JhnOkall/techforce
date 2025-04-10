@@ -63,16 +63,16 @@ export function TechForceNavbar() {
         <div className="md:hidden bg-[#0D1117]/95 backdrop-blur-md">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
-                {["Home", "Devices", "Reviews", "Compare", "About"].map((item) => (
+              {["Home", "Devices", "Reviews", "Compare", "About"].map((item) => (
                 <Link
                   key={item}
-                  href={item === "Home" ? "/" : item === "Devices" ? "/devices" : "#"}
+                  href="#"
                   className="text-[#E6EDF3] hover:text-[#0A84FF] transition-colors duration-300 font-medium py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item}
                 </Link>
-                ))}
+              ))}
               <Button className="bg-[#0A84FF] hover:bg-[#FF6B00] text-white rounded-md transition-all duration-300 shadow-[0_0_10px_rgba(10,132,255,0.3)] hover:shadow-[0_0_15px_rgba(255,107,0,0.4)] w-full mt-2">
                 Sign In
               </Button>
