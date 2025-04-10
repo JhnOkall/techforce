@@ -26,7 +26,6 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8 text-[#E6EDF3]/90">Specs, Reviews, Comparisons. All in One Place.</p>
             <Button 
               className="bg-[#0A84FF] hover:bg-[#FF6B00] text-white px-8 py-6 rounded-md text-lg transition-all duration-300 shadow-[0_0_15px_rgba(10,132,255,0.5)] hover:shadow-[0_0_20px_rgba(255,107,0,0.6)]"
-              onClick={() => window.location.href = '/devices'}
             >
               Explore Devices <ChevronRight className="ml-2 h-5 w-5" />
             </Button>
