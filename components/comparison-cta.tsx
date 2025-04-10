@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export function ComparisonCta() {
   return (
@@ -25,10 +26,11 @@ export function ComparisonCta() {
             <p className="text-xl text-[#E6EDF3]/80 mb-10 max-w-2xl mx-auto">
               Put devices head-to-head and find the perfect match for your needs and budget.
             </p>
-
+<Link href="/compare">
             <Button className="bg-[#0A84FF] hover:bg-[#FF6B00] text-white px-8 py-6 rounded-md text-lg transition-all duration-300 shadow-[0_0_15px_rgba(10,132,255,0.5)] hover:shadow-[0_0_20px_rgba(255,107,0,0.6)]">
               Compare Now
             </Button>
+            </Link>
           </motion.div>
         </div>
       </div>
